@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <ident>TPC5</ident>
+        <titulo>Trabalho de casa 5</titulo>
+        <dini>16/10/2018</dini>
+        <dfim>19/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Leandro Salgado</nome>
+            <email>a70949@alunos.uminho.pt</email>
+            <ident>A70949</ident>
+            <website>https://github.com/salgadoLeandro</website>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            Criação de um servidor para um <i>site</i> relativo a um <i>dataset</i> de <b>obras musicais</b>. 
+        </para>
+        <para>
+            O <i>site</i> funciona com <i>templates</i> em <b>Pug</b> e <b>JSON</b>, introduzindo também <b>CSS</b>.
+        </para>
+        <para>
+            O <i>dataset</i> não possui índice, pelo que o servidor cria o mesmo ao inicializar.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado>
+            <texto>manifesto-tp5.xml</texto>
+            <url>manifesto-tp5.xml</url>
+        </resultado>
+        <resultado>
+            <texto>manifesto-tp5.html</texto>
+            <url>manifesto-tp5.html</url>
+        </resultado>
+        <resultado>
+            <texto>Repositório do TP5</texto>
+            <url>https://github.com/salgadoLeandro/dweb/tree/master/tp5</url>
+        </resultado>
+    </resultados>
+</manifesto>
