@@ -1,0 +1,53 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-containter.w3-light-grey
+                h1= obra.titulo
+            .w3-container
+                table.w3-table.w3-bordered
+                    tr
+                        th Identificador
+                        td= obra._id
+                    if obra.tipo
+                        tr
+                            th(align= 'right') Tipo
+                            td= obra.tipo
+                    if obra.compositor
+                        tr
+                            th(align= 'right') Compositor
+                            td= obra.compositor
+                    if obra.arranjo
+                        tr
+                            th(align= 'right') Arranjo
+                            td= obra.arranjo
+                    if obra.instrumentos
+                        tr(valign= 'top')
+                            th Instrumentos
+                            td
+                                table.w3-table.w3-bordered
+                                    tr
+                                        th Nome
+                                        th Partitura
+                                        th Voz
+                                        th Clave
+                                        th Afinação
+                                    each inst in obra.instrumentos
+                                        tr
+                                            td= inst.nome
+                                            td
+                                                if inst.partitura.path
+                                                    a(href= inst.partitura.path)= inst.partitura.path
+                                            td
+                                                if inst.partitura.voz
+                                                    = inst.partitura.voz
+                                            td
+                                                if inst.partitura.clave
+                                                    = inst.partitura.voz
+                                            td
+                                                if inst.partitura.afinacao
+                                                    = inst.partitura.afinacao
+                footer.w3-container.w3-light-grey
+                    address
+                        a(href= 'http://localhost:5000/index') Voltar ao menu principal

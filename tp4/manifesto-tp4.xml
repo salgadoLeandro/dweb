@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <ident>TPC4</ident>
+        <titulo>Trabalho de casa 4</titulo>
+        <dini>09/10/2018</dini>
+        <dfim>10/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Leandro Salgado</nome>
+            <email>a70949@alunos.uminho.pt</email>
+            <ident>A70949</ident>
+            <website>https://github.com/salgadoLeandro</website>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            Continuação do trabalho de aula, em que se criou um <i>website</i> para o arquivo de arqueossítios do noroeste português.
+        </para>
+        <para>
+            Criou-se também um repositório de <i>git</i> onde estará guardado o código fonte do servidor, juntamente com a informação das páginas do <i>site</i>.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado>
+            <texto>manifesto-tp4.xml</texto>
+            <url>manifesto-tp4.xml</url>
+        </resultado>
+        <resultado>
+            <texto>manifesto-tp4.html</texto>
+            <url>manifesto-tp4.html</url>
+        </resultado>
+        <resultado>
+            <texto>Repositório do TP4</texto>
+            <url>https://github.com/salgadoLeandro/dweb/tree/master/tp4</url>
+        </resultado>
+    </resultados>
+</manifesto>

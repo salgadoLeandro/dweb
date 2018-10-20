@@ -1,0 +1,360 @@
+[
+	{
+		"compositor": "A. Madureira da Silva",
+		"obras": [
+			{
+				"_id": "m9",
+				"titulo": "Súplica"
+			}
+		]
+	},
+	{
+		"compositor": "A. Morais",
+		"obras": [
+			{
+				"_id": "m3",
+				"titulo": "1989"
+			}
+		]
+	},
+	{
+		"compositor": "ABBA",
+		"obras": [
+			{
+				"_id": "m28",
+				"titulo": "Abba Mia"
+			}
+		]
+	},
+	{
+		"compositor": "Afonso Alves",
+		"obras": [
+			{
+				"_id": "m14",
+				"titulo": "Filarmonia"
+			}
+		]
+	},
+	{
+		"compositor": "Alberto Madureira",
+		"obras": [
+			{
+				"_id": "m7",
+				"titulo": "Avé Maria"
+			}
+		]
+	},
+	{
+		"compositor": "Alexandre Fonseca",
+		"obras": [
+			{
+				"_id": "m18",
+				"titulo": "12 de Abril"
+			}
+		]
+	},
+	{
+		"compositor": "Alexandre Teixeira Fonseca",
+		"obras": [
+			{
+				"_id": "m17",
+				"titulo": "Homenagem a Vila Verde"
+			}
+		]
+	},
+	{
+		"compositor": "Alexandre da Fonseca",
+		"obras": [
+			{
+				"_id": "m16",
+				"titulo": "Homenagem ao Dr Manuel Vaz"
+			}
+		]
+	},
+	{
+		"compositor": "Amílcar Morais",
+		"obras": [
+			{
+				"_id": "m15",
+				"titulo": "Caçadores do I"
+			},
+			{
+				"_id": "m19",
+				"titulo": "Tarântula"
+			},
+			{
+				"_id": "m8",
+				"titulo": "Corpo Místico"
+			}
+		]
+	},
+	{
+		"compositor": "António Almeida da Silva",
+		"obras": [
+			{
+				"_id": "m48",
+				"titulo": "Transfiguração"
+			}
+		]
+	},
+	{
+		"compositor": "Carlos Marques",
+		"obras": [
+			{
+				"_id": "m20",
+				"titulo": "Cassiopeia"
+			},
+			{
+				"_id": "m25",
+				"titulo": "Português Suave"
+			},
+			{
+				"_id": "m4",
+				"titulo": "Manuel Joaquim ALmeida"
+			},
+			{
+				"_id": "m6",
+				"titulo": "São Martinho"
+			}
+		]
+	},
+	{
+		"compositor": "Desconhecido",
+		"obras": [
+			{
+				"_id": "m41",
+				"titulo": "Sonhos de Portugal"
+			}
+		]
+	},
+	{
+		"compositor": "Fernando Ferreira da Costa",
+		"obras": [
+			{
+				"_id": "m11",
+				"titulo": "Invocação a Deus"
+			}
+		]
+	},
+	{
+		"compositor": "Franz Von Suppé",
+		"obras": [
+			{
+				"_id": "m32",
+				"titulo": "Cavalaria Ligeira"
+			}
+		]
+	},
+	{
+		"compositor": "Gustavo Pascual Falcó",
+		"obras": [
+			{
+				"_id": "m33",
+				"titulo": "Paquito Chocolatero"
+			}
+		]
+	},
+	{
+		"compositor": "Harold Walters",
+		"obras": [
+			{
+				"_id": "m35",
+				"titulo": "Bands Around the World"
+			}
+		]
+	},
+	{
+		"compositor": "Ilídio Costa",
+		"obras": [
+			{
+				"_id": "m1",
+				"titulo": "Homenagem a J. Serra"
+			},
+			{
+				"_id": "m13",
+				"titulo": "Casa de S. Paulo"
+			},
+			{
+				"_id": "m2",
+				"titulo": "Armindo Alves"
+			},
+			{
+				"_id": "m21",
+				"titulo": "António Nogueira"
+			},
+			{
+				"_id": "m45",
+				"titulo": "Momentos Menores"
+			}
+		]
+	},
+	{
+		"compositor": "J. Strauss",
+		"obras": [
+			{
+				"_id": "m43",
+				"titulo": "Marcha Radetzky"
+			}
+		]
+	},
+	{
+		"compositor": "Jacob de Haan",
+		"obras": [
+			{
+				"_id": "m29",
+				"titulo": "Ross Roy"
+			}
+		]
+	},
+	{
+		"compositor": "James Barnes",
+		"obras": [
+			{
+				"_id": "m131",
+				"titulo": "Alvamar Overture"
+			}
+		]
+	},
+	{
+		"compositor": "Jorge Salgueiro",
+		"obras": [
+			{
+				"_id": "m44",
+				"titulo": "Vila Franca"
+			}
+		]
+	},
+	{
+		"compositor": "Luís Cardoso",
+		"obras": [
+			{
+				"_id": "m27",
+				"titulo": "Canções da Tradição"
+			}
+		]
+	},
+	{
+		"compositor": "Nuno Osório",
+		"obras": [
+			{
+				"_id": "m26",
+				"titulo": "Cycles and Myths"
+			},
+			{
+				"_id": "m36",
+				"titulo": "Hispânico"
+			}
+		]
+	},
+	{
+		"compositor": "Richard Wagner",
+		"obras": [
+			{
+				"_id": "m49",
+				"titulo": "Tannhauser Ouverture"
+			}
+		]
+	},
+	{
+		"compositor": "Salvador Salvá",
+		"obras": [
+			{
+				"_id": "m34",
+				"titulo": "Xabia"
+			}
+		]
+	},
+	{
+		"compositor": "Santana",
+		"obras": [
+			{
+				"_id": "m46",
+				"titulo": "Santana"
+			}
+		]
+	},
+	{
+		"compositor": "Steven Reineke",
+		"obras": [
+			{
+				"_id": "m23",
+				"titulo": "Fate of the Gods"
+			},
+			{
+				"_id": "m42",
+				"titulo": "Pilatus: Mountain of Dragons"
+			}
+		]
+	},
+	{
+		"compositor": "Tchaikovsky",
+		"obras": [
+			{
+				"_id": "m22",
+				"titulo": "Marcha Eslava"
+			}
+		]
+	},
+	{
+		"compositor": "Ulvaeus Andersson",
+		"obras": [
+			{
+				"_id": "m31",
+				"titulo": "Highlights from 'Chess'"
+			}
+		]
+	},
+	{
+		"compositor": "Valdemar Sequeira",
+		"obras": [
+			{
+				"_id": "m12",
+				"titulo": "São Bento"
+			},
+			{
+				"_id": "m24",
+				"titulo": "Vamos à Romaria"
+			},
+			{
+				"_id": "m47",
+				"titulo": "Bailar em Nespereira"
+			}
+		]
+	},
+	{
+		"compositor": "W. Scneider - Argenbuhl",
+		"obras": [
+			{
+				"_id": "m5",
+				"titulo": "Holiday in Rio"
+			}
+		]
+	},
+	{
+		"compositor": "Wim Laseroms",
+		"obras": [
+			{
+				"_id": "m50",
+				"titulo": "Harmonique"
+			}
+		]
+	},
+	{
+		"compositor": "Xutos e Pontapés",
+		"obras": [
+			{
+				"_id": "m40",
+				"titulo": "Xutos Medley"
+			}
+		]
+	},
+	{
+		"compositor": "Álvaro Reis",
+		"obras": [
+			{
+				"_id": "m10",
+				"titulo": "Senhora Nossa"
+			}
+		]
+	}
+]
