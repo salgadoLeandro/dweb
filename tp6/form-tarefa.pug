@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Registo de uma tarefa
+            .w3-container
+                form.w3-container(action='/processaForm' method='POST')
+                    label.w3-teal
+                        b Descrição
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='desc')
+                    label.w3-teal
+                        b Prazo
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prazo')
+                    label.w3-teal
+                        b Importância
+                    select.w3-select.w3-border.w3-light-grey(type='text' name='imp')
+                        option(value='Alta') Alta
+                        option(value='Normal' selected) Normal
+                        option(value='Baixa') Baixa
+                    label.w3-teal
+                        b Tipo
+                    select.w3-select.w3-border.w3-light-grey(type='text' name='tipo')
+                        option(value='Tarefa académica') Tarefa Académica
+                        option(value='Tarefa doméstica') Tarefa Doméstica
+                    input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+            footer.w3-container.w3-teal
+                address Gerado por FormApp: 
+                    a(href='/') Voltar à página principal
