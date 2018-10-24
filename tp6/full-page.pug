@@ -4,6 +4,29 @@ block content
     .w3-container
         .w3-card-4
             header.w3-container.w3-teal
+                h3 Registo de uma tarefa
+            .w3-container
+                form.w3-container(action='/' method='POST')
+                    label.w3-teal
+                        b Descrição
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='desc')
+                    label.w3-teal
+                        b Prazo
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prazo')
+                    label.w3-teal
+                        b Importância
+                    select.w3-select.w3-border.w3-light-grey(type='text' name='imp')
+                        option(value='Alta') Alta
+                        option(value='Normal' selected) Normal
+                        option(value='Baixa') Baixa
+                    label.w3-teal
+                        b Tipo
+                    select.w3-select.w3-border.w3-light-grey(type='text' name='tipo')
+                        option(value='Tarefa académica') Tarefa Académica
+                        option(value='Tarefa doméstica') Tarefa Doméstica
+                    input.w3-input(type='hidden' name='btn' value=0)
+                    input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+            header.w3-container.w3-teal
                 h3 Lista de tarefas
             .w3-container
                 table.w3-table-all
@@ -18,7 +41,7 @@ block content
                     each ta in lista
                         if !ta.apagado && ta.ongoing
                             tr
-                                td= ta.reg
+                                td= new Date(ta.reg).toDateString()
                                 td= ta.prazo
                                 td= ta.desc
                                 td= ta.imp
@@ -27,16 +50,18 @@ block content
                                 td
                                     table
                                         tr
-                                            form.w3-container(action='/termina' method='POST')
+                                            form.w3-container(action='/' method='POST')
+                                                input.w3-input(type='hidden' name='btn' value=2)
                                                 input.w3-input(type='hidden' name='reg' value=ta.reg)
                                                 input.w3-btn.w3-light-green(type='submit' value='Terminar')
-                                            form.w3-container(action='/apaga' method='POST')
+                                            form.w3-container(action='/' method='POST')
+                                                input.w3-input(type='hidden' name='btn' value=1)
                                                 input.w3-input(type='hidden' name='reg' value=ta.reg)
                                                 input.w3-btn.w3-red(type='submit' value='Apagar')
                     each ta in lista
                         if !ta.ongoing && !ta.apagado
                             tr.w3-pale-green
-                                td= ta.reg
+                                td= new Date(ta.reg).toDateString()
                                 td= ta.prazo
                                 td= ta.desc
                                 td= ta.imp
@@ -45,19 +70,9 @@ block content
                                 td
                                     table
                                         tr
-                                            form.w3-container(action='/apaga' method='POST')
+                                            form.w3-container(action='/' method='POST')
+                                                input.w3-input(type='hidden' name='btn' value=1)
                                                 input.w3-input(type='hidden' name='reg' value=ta.reg)
                                                 input.w3-btn.w3-red(type='submit' value='Apagar')
-                    each ta in lista
-                        if ta.apagado
-                            tr.w3-dark-grey
-                                td= ta.reg
-                                td= ta.prazo
-                                td= ta.desc
-                                td= ta.imp
-                                td= ta.tipo
-                                td= 'Apagada'
-                                td= ''
             footer.w3-container.w3-teal
-                address Gerado por FormApp: 
-                    a(href='/') Voltar à página principal
+                address Gerado por FormApp
