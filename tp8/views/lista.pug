@@ -1,0 +1,10 @@
+tr
+    th Ficheiro
+    th Descrição
+    th Última modificação
+each file in lista
+    tr
+        td
+            a(href= '/uploaded/' + file.nome)= file.nome
+        td= file.desc
+        td= new Date(file.postDate).toDateString()
