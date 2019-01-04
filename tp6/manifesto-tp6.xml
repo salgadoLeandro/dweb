@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <ident>TPC6</ident>
+        <titulo>Trabalho de casa 6</titulo>
+        <dini>23/10/2018</dini>
+        <dfim>25/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Leandro Salgado</nome>
+            <email>a70949@alunos.uminho.pt</email>
+            <ident>A70949</ident>
+            <website>https://github.com/salgadoLeandro</website>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            Criação de um servidor para uma lista de tarefas. 
+        </para>
+        <para>
+            O <i>site</i> funciona com <i>templates</i> em <b>Pug</b>, <b>JSON</b> e <b>CSS</b>. 
+        </para>
+        <para>
+            Permite o registo de tarefas, terminar tarefas a decorrer, e apagá-las.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado>
+            <texto>manifesto-tp6.xml</texto>
+            <url>manifesto-tp6.xml</url>
+        </resultado>
+        <resultado>
+            <texto>manifesto-tp6.html</texto>
+            <url>manifesto-tp6.html</url>
+        </resultado>
+        <resultado>
+            <texto>Repositório do TP6</texto>
+            <url>https://github.com/salgadoLeandro/dweb/tree/master/tp6</url>
+        </resultado>
+    </resultados>
+</manifesto>

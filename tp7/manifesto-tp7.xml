@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <ident>TPC7</ident>
+        <titulo>Trabalho de casa 7</titulo>
+        <dini>29/10/2018</dini>
+        <dfim>07/11/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Leandro Salgado</nome>
+            <email>a70949@alunos.uminho.pt</email>
+            <ident>A70949</ident>
+            <website>https://github.com/salgadoLeandro</website>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            Criação de um repositório de ficheiros.
+        </para>
+        <para>
+            O <i>site</i> funciona com <i>templates</i> em <b>Pug</b>, <b>JSON</b>, e <b>CSS</b>. Introduz <i>client-side</i> <b>Javascript</b>.
+        </para>
+        <para>
+            Permite o <i>upload</i> e o <i>download</i> de ficheiros.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado>
+            <texto>manifesto-tp7.xml</texto>
+            <url>manifesto-tp7.xml</url>
+        </resultado>
+        <resultado>
+            <texto>manifesto-tp7.html</texto>
+            <url>manifesto-tp7.html</url>
+        </resultado>
+        <resultado>
+            <texto>Repositório do TP7</texto>
+            <url>https://github.com/salgadoLeandro/dweb/tree/master/tp7</url>
+        </resultado>
+    </resultados>
+</manifesto>
