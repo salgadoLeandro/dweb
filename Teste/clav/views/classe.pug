@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3= classe.codigo + ' - ' + classe.titulo
+            .w3-container
+                table.w3-table-all
+                    if (classe.status)
+                        tr
+                            th Status
+                            td= classe.status
+                    if (classe.desc)
+                        tr
+                            th Descrição
+                            td= classe.desc
+                    if (descend.length)
+                        tr
+                            th Descendência
+                            td
+                                each desc in descend
+                                    tr
+                                        td
+                                            a(href='/classe/' + desc.codigo)= desc.codigo
+                                        td(id=desc.id)= desc.titulo
+            footer.w3-container.w3-teal
+                address 
+                    a(href='/') Voltar à página principal
+                                

@@ -1,0 +1,176 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Project Record</title>
+      <meta charset="UTF-8">
+   </head>
+   <body>
+      <h1 align="center">Project Record</h1>
+      
+      <div>
+         <hr>
+         
+         <p><b>Key Name</b>: Teste
+         </p>
+         
+         <p><b>Title</b>: Teste
+         </p>
+         
+         <p><b>Begin Date</b>: 15/01/2019
+         </p>
+         
+         <p><b>End Date</b>: 15/01/2019
+         </p>
+         
+         <p><b>Supervisor</b>: 
+            <a href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a>
+            | <a href="mailto:jcr@di.uminho.pt">Enviar correio</a></p>
+         
+         <hr>
+      </div>
+      
+      <div>
+         <hr>
+         <h3>Equipa</h3>
+         <ol>
+            
+            <li>
+               (A70949)
+               <a href="https://github.com/salgadoLeandro">Leandro Salgado</a>
+               - <a href="mailto:a70949@alunos.uminho.pt">email</a></li>
+            
+         </ol>
+         <hr>
+      </div>
+      
+      <div>
+         <hr>
+         <h3>Resumo</h3>
+         
+         <p>
+            <b>Exercício nº 1: Compositores Musicais</b>
+            
+         </p>
+         
+         <p>
+            No primeiro exercício foi pedido que se desenvolvesse uma <i>API</i> de dados para um dataset em <i>XML</i>.
+            
+         </p>
+         
+         <p>
+            Primeiro, o <i>XML</i> foi convertido manualmente, com recurso a um editor de texto (neste caso <i>Visual Studio Code</i>) e <i>Regex</i>, para <i>JSON</i> num formato que pudesse ser importado para <i>MongoDB</i>.
+            
+         </p>
+         
+         <p>
+            De seguida, o ficheiro resultado foi importado para <i>MongoDB</i>, criando assim a base de dados da aplicação.
+            
+         </p>
+         
+         <p>
+            Finalmente, foi elaborada um aplicação <i>web</i> em <i>NodeJS</i> que expõe um <i>API</i> de dados, permitindo o acesso à base de dados previamente criada.
+            
+         </p>
+         
+         <p>
+            De modo a executar a aplicação, é necessário primeiro tornar a base de dados operacional.
+            Para tal, estando no <i>root</i> do projeto (neste caso, directoria <b>Teste</b>), executa-se o <i>daemon</i> do <i>MongoDB</i> com <i>mongod --dbpath data</i>.
+            
+         </p>
+         
+         <p>
+            Após a base de dados estar operacional, falta apenas instalar os módulos necessários
+            para o funcionamento da mesma. Mudando para a directoria da aplicação (neste caso,
+            <b>Teste/compositores</b>), executa-se o comando <i>npm install</i>, para instalar os módulos, seguido do comando <i>npm start</i> para executar a aplicação.
+            
+         </p>
+         
+         <p>
+            
+         </p>
+         
+         <p>
+            <b>Exercício nº 2: CLAV: Classificação e Avaliação da Informação Pública</b>
+            
+         </p>
+         
+         <p>
+            No segundo exercício foi pedido que se repondesse a 3 questões e que se desenvolvesse
+            uma <i>interface web</i> para uma <i>API</i> de dados já existente.
+            
+         </p>
+         
+         <p>
+            A aplicação foi elaborada em <i>NodeJS</i> com recurso a <i>PUG</i> para facilmente fazer a <i>interface</i> da aplicação.
+            
+         </p>
+         
+         <p>
+            Uma vez que a base de dados é externa à aplicação, o acesso à mesma foi feita através
+            do <i>package</i> <i>axios</i>.
+            
+         </p>
+         
+         <p>
+            Assim, após mudar para a directoria da aplicação (neste caso, <b>Teste/clav</b>), executa-se o comando <i>npm install</i>, para instalar os módulos, seguido do comando <i>npm start</i> para executar a aplicação.
+            
+         </p>
+         
+         <p>
+            As questões e respectivas respostas encontram-se a seguir:
+            
+         </p>
+         
+         <p>
+            <b>Q:</b> Quantos processos (nível 3) e quais são (obtem uma lista em JSON; podes concatenar
+            sublistas invocando várias queries), existem na descendência da classe 200?
+            
+         </p>
+         
+         <p>    
+            <b>R:</b> 22 processos. A lista está no ficheiro <i>clav_1.json</i>, que está nos resultados.
+            
+         </p>
+         
+         <p>
+            <b>Q:</b> Quantos subprocessos existem? (classes de nível 4)
+            
+         </p>
+         
+         <p>    
+            <b>R:</b> 116 subprocessos.
+            
+         </p>
+         
+         <p>
+            <b>Q:</b> Quantos processos (classes de nível 3) se encontram subdivididos em níveis 4?
+            
+         </p>
+         
+         <p>
+            <b>R:</b> 58 processos nível 3 encontram-se subdivididos em níveis 4.
+            
+         </p>
+         
+         <hr>
+      </div>
+      
+      <div>
+         <hr>
+         <h3>Resultados</h3>
+         <ul>
+            
+            <li><a href="manifesto-teste.xml">manifesto-teste.xml</a></li>
+            
+            <li><a href="manifesto-teste.html">manifesto-teste.html</a></li>
+            
+            <li><a href="clav_1.json">clav_1.json</a></li>
+            
+            <li><a href="https://github.com/salgadoLeandro/dweb/tree/master/teste">Repositório do TP8</a></li>
+            
+         </ul>
+         <hr>
+      </div>
+      
+   </body>
+</html>

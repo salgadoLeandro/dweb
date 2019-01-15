@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 CLAV – Plataforma para a Classificação e Avaliação da Informação Arquivística
+            .w3-container
+                    h5 A CLAV é uma plataforma que visa disponibilizar a “Lista Consolidada para a classificação e avaliação da informação pública” enquanto instrumento facilitador da elaboração dos planos de classificação e tabelas de seleção da Administração Pública, de empresas públicas e de outras entidades.
+            .w3-container
+                h4 Classes
+                table.w3-table-all
+                    each classe in lista
+                        tr
+                            td
+                                a(href='/classe/' + classe.codigo)= classe.codigo
+                            td(id=classe.id)= classe.titulo
+            footer.w3-container.w3-teal    

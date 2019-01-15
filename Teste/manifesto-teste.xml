@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <ident>Teste</ident>
+        <titulo>Teste</titulo>
+        <dini>15/01/2019</dini>
+        <dfim>15/01/2019</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Leandro Salgado</nome>
+            <email>a70949@alunos.uminho.pt</email>
+            <ident>A70949</ident>
+            <website>https://github.com/salgadoLeandro</website>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            <b>Exercício nº 1: Compositores Musicais</b>
+        </para>
+        <para>
+            No primeiro exercício foi pedido que se desenvolvesse uma <i>API</i> de dados para um dataset em <i>XML</i>.
+        </para>
+        <para>
+            Primeiro, o <i>XML</i> foi convertido manualmente, com recurso a um editor de texto (neste caso <i>Visual Studio Code</i>) e <i>Regex</i>, para <i>JSON</i> num formato que pudesse ser importado para <i>MongoDB</i>.
+        </para>
+        <para>
+            De seguida, o ficheiro resultado foi importado para <i>MongoDB</i>, criando assim a base de dados da aplicação.
+        </para>
+        <para>
+            Finalmente, foi elaborada um aplicação <i>web</i> em <i>NodeJS</i> que expõe um <i>API</i> de dados, permitindo o acesso à base de dados previamente criada.
+        </para>
+        <para>
+            De modo a executar a aplicação, é necessário primeiro tornar a base de dados operacional. Para tal, estando no <i>root</i> do projeto (neste caso, directoria <b>Teste</b>), executa-se o <i>daemon</i> do <i>MongoDB</i> com <i>mongod --dbpath data</i>.
+        </para>
+        <para>
+            Após a base de dados estar operacional, falta apenas instalar os módulos necessários para o funcionamento da mesma. Mudando para a directoria da aplicação (neste caso, <b>Teste/compositores</b>), executa-se o comando <i>npm install</i>, para instalar os módulos, seguido do comando <i>npm start</i> para executar a aplicação.
+        </para>
+        <para>
+        </para>
+        <para>
+            <b>Exercício nº 2: CLAV: Classificação e Avaliação da Informação Pública</b>
+        </para>
+        <para>
+            No segundo exercício foi pedido que se repondesse a 3 questões e que se desenvolvesse uma <i>interface web</i> para uma <i>API</i> de dados já existente.
+        </para>
+        <para>
+            A aplicação foi elaborada em <i>NodeJS</i> com recurso a <i>PUG</i> para facilmente fazer a <i>interface</i> da aplicação.
+        </para>
+        <para>
+            Uma vez que a base de dados é externa à aplicação, o acesso à mesma foi feita através do <i>package</i> <i>axios</i>.
+        </para>
+        <para>
+            Assim, após mudar para a directoria da aplicação (neste caso, <b>Teste/clav</b>), executa-se o comando <i>npm install</i>, para instalar os módulos, seguido do comando <i>npm start</i> para executar a aplicação.
+        </para>
+        <para>
+            As questões e respectivas respostas encontram-se a seguir:
+        </para>
+        <para>
+            <b>Q:</b> Quantos processos (nível 3) e quais são (obtem uma lista em JSON; podes concatenar sublistas invocando várias queries), existem na descendência da classe 200?
+        </para>
+        <para>    
+            <b>R:</b> 22 processos. A lista está no ficheiro <i>clav_1.json</i>, que está nos resultados.
+        </para>
+        <para>
+            <b>Q:</b> Quantos subprocessos existem? (classes de nível 4)
+        </para>
+        <para>    
+            <b>R:</b> 116 subprocessos.
+        </para>
+        <para>
+            <b>Q:</b> Quantos processos (classes de nível 3) se encontram subdivididos em níveis 4?
+        </para>
+        <para>
+            <b>R:</b> 58 processos nível 3 encontram-se subdivididos em níveis 4.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado>
+            <texto>manifesto-teste.xml</texto>
+            <url>manifesto-teste.xml</url>
+        </resultado>
+        <resultado>
+            <texto>manifesto-teste.html</texto>
+            <url>manifesto-teste.html</url>
+        </resultado>
+        <resultado>
+            <texto>clav_1.json</texto>
+            <url>clav_1.json</url>
+        </resultado>
+        <resultado>
+            <texto>Repositório do TP8</texto>
+            <url>https://github.com/salgadoLeandro/dweb/tree/master/teste</url>
+        </resultado>
+    </resultados>
+</manifesto>
