@@ -94,8 +94,8 @@
             <url>clav_1.json</url>
         </resultado>
         <resultado>
-            <texto>Repositório do TP8</texto>
-            <url>https://github.com/salgadoLeandro/dweb/tree/master/teste</url>
+            <texto>Repositório do Teste</texto>
+            <url>https://github.com/salgadoLeandro/dweb/tree/master/Teste</url>
         </resultado>
     </resultados>
 </manifesto>
