@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div(data-role='page' data-url='/login')
+        div(data-role='header', data-position='fixed')
+            h2 myFacebook
+            a(href='/', data-ajax='false', class='ui-btn ui-icon-home ui-btn-icon-right ui-corner-all') myFacebook
+            a(href='/register',  data-ajax='false', class='ui-btn ui-corner-all') Register
+        div(data-role='main' class='ui-content' style='margin-left:10vw;margin-right:10vw')
+            h3(align='center') Login
+            if (message)
+                h4(align='center' style='color:red')= message
+            form(method='post' action='/login')
+                input(type='text' name='email' id='femail' placeholder='E-mail')
+                input(type='password' name='password' id='fpassword' placeholder='Password')
+                .ui-grid-b
+                    .ui-block-a
+                    .ui-block-b
+                        input(type='submit' value='Login' data-corner='true')

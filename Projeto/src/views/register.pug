@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    div(data-role='page' data-url='/register')
+        div(data-role='header', data-position='fixed')
+            h2 myFacebook
+            a(href='/', data-ajax='false', class='ui-btn ui-icon-home ui-btn-icon-right ui-corner-all') myFacebook
+            a(href='/login',  data-ajax='false', class='ui-btn-right') Login
+        div(data-role='main' class='ui-content' style='margin-left:10vw;margin-right:10vw')
+            label(align='center') Register new user
+            if (message)
+                div(style='background-color:#ff1a1a' align='center')
+                    p= message
+            form(method='post' action='/register')
+                input(type='text' name='name' id='fname' placeholder='Name')
+                input(type='text' name='email' id='femail' placeholder='E-mail')
+                input(type='password' name='password' id='fpassword' placeholder='Password')
+                .ui-grid-b
+                    .ui-block-a
+                        label(for='date') Birthdate
+                .ui-grid-c
+                    .ui-block-a
+                        input(type='date' name='birthdate' id='date')
+                fieldset(data-role='controlgroup' data-type='horizontal')
+                    legend Gender
+                    label(for='radio1') Male
+                    input(type='radio' name='radio-choice-b' id='radio1' value='male' checked='checked')
+                    label(for='radio2') Female
+                    input(type='radio' name='radio-choice-b' id='radio2' value='female')
+                .ui-grid-c
+                    .ui-block-a
+                    .ui-block-b
+                    .ui-block-c
+                    .ui-block-d
+                        input(type='submit' value='Register' data-corner='true')

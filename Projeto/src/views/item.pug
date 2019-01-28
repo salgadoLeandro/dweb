@@ -1,0 +1,64 @@
+extends layout
+
+block content
+    div(data-role='page' id='mainpage' data-url='/item/'+data[0]._id)
+        div(data-role='header', data-position='fixed')
+            h2(id='header-click') myFacebook
+            a(href='/user/profile', data-ajax='false', class='ui-btn ui-btn-left ui-icon-user ui-btn-icon-right ui-corner-all') Profile
+            a(href='/user/logout',  data-ajax='false', class='ui-btn ui-btn-right ui-icon-power ui-btn-icon-left ui-corner-all') Logout
+        div(style='border-color:#ddd;background-color:#e9e9e9;margin-left:10vw;margin-right:10vw;margin-top:5px')
+            div(data-role='main' class='ui-content' id='item')
+                - var n = 0;
+                if (!data || !data.length)
+                    h4(align='center') There's nothing here
+                else
+                    each item in data
+                        div(class='divitem' style='border:2px solid #ccc;border-bottom:1px solid #ccc;padding-left:0.25vw;padding-top:0.1pw')
+                            label(class='item_id' id='item'+n++ style='display:none')= item._id
+                            .ui-grid-a
+                                .ui-block-a
+                                    a(href='/user/'+item.user_id style='font-size:110%;color:black')= item.user_name
+                                    h5(style='margin-top:-1px')= item.date
+                                .ui-block-b
+                                    div(align='right' style='margin-right:0.25vw')
+                                        a(href='/item/'+item._id class='ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all')
+                            - var a = item.type == 'album' ? true : undefined
+                            - var e = item.type == 'event' ? true : undefined
+                            if a || e
+                                p(style='font-size:120%;margin-top:-10px;padding-left:0.25vw;margin-right:0.25vw')= item.title
+                            if e
+                                p(style='font-size:100%;margin-top:-10px;padding-left:0.25vw;margin-right:0.25vw')= item.local
+                            p(style='font-size:110%;margin-top:-10px;padding-left:0.25vw;margin-right:0.25vw;background-color:white')= item.text
+                            - var files_length = item.files.length > 0 ? item.files.length : undefined
+                            if files_length
+                                ul(data-role='listview' data-inset='true' style='margin-right:0.25vw;margin-top:-10px;width:30%')
+                                    li(data-role='list-divider' style='background-color:#e0e0e0') Attached files
+                                    each file in item.files
+                                        li(style='font-size:95%' data-icon='arrow-d')
+                                            a(href='/files/'+file._id class='download')= file.original
+                            div(class='answerdiv' style='margin-right:0.25vw')
+                                label(class='comment_level' style='display:none') 0
+                                input(type='text' data-clear-btn='true' class='comment_box' id='cb:'+item._id value='' placeholder='Comment')
+                            
+                            - var c = 0;
+                            each comment in item.comments
+                                div(class='content' style='background-color:#e0e0e0;padding-left:0.25vw;margin-left:2vw;margin-right:0.25vw')
+                                    a(href='/user/'+comment.userid style='font-size:90%;color:black')= comment.author
+                                    h5(style='font-size:80%;margin-top:-1px')= comment.timestamp
+                                    p(style='font-size:80%;margin-top:-20px')= comment.text
+                                    div(class='answerdiv' style='margin-top:-15px')
+                                        a(href='' class='answer' style='font-size:80%') Reply
+                                        label(class='comment_level' style='display:none') 1
+                                        label(class='comment_index' style='display:none')= c
+                                        input(type='text' data-clear-btn='true' class='comment_box' id='cb:'+item._id value='' placeholder='Comment' style='display:none')
+                                    each reply in comment.replies
+                                        div(style='background-color:#e9e9e9;padding-left:0.25vw;margin-left:1vw;margin-right:0.25vw')
+                                            a(href='/user/'+reply.userid style='font-size:90%;color:black')= reply.author
+                                            h5(style='font-size:80%;margin-top:-1px')= reply.timestamp
+                                            p(style='font-size:80%;margin-top:-20px')= reply.text
+                                            div(class='answerdiv' style='margin-top:-15px')
+                                                a(href='' class='answer' style='font-size:80%') Reply
+                                                label(class='comment_level' style='display:none') 1
+                                                label(class='comment_index' style='display:none')= c
+                                                input(type='text' data-clear-btn='true' class='comment_box' id='cb:'+item._id value='' placeholder='Comment' style='display:none')
+                                - c++
